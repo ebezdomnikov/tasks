@@ -1,3 +1,13 @@
+-- таблица пользователей
+CREATE TABLE `users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `gender` tinyint(4) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
 -- Таблица Категорий
 CREATE TABLE `category` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT, 
